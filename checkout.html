@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="checkout.css" />
+  <script src="checkout.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🎟️ PAY NOW</h1>
+  </header>
+
+  <section id="ticket-summary">
+    <h2>Your Selected Tickets</h2>
+    <table id="checkout-table">
+      <thead>
+        <tr>
+          <th>Movie</th>
+          <th>Seats</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <h3>Total: Rs. <span id="checkout-total">0</span></h3>
+  </section>
+
+  <section id="customer-details">
+    <h2>Your Details</h2>
+    <form id="payment-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required /><br/>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required /><br/>
+
+      <label for="seats">Preferred Seat(s):</label>
+      <input type="text" id="seats" required placeholder="e.g. A1, A2" /><br/>
+      <img src="img/tr.jpg" alt="Hall" style="height: 300px; width:300px;">
+
+
+      <!-- Credit Card Form -->
+
+      <h3>Credit Card Information</h3>
+
+      <label for="card">Credit Card Number:</label>
+      <input type="text" id="card" required /><br/>
+
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="month" id="expiry-date" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" maxlength="3" required>
+
+      <button type="submit">Pay</button>
+    </form>
+  </section>
+
+  <section id="confirmation" style="display: none;">
+    <h2>✅ Thank You!</h2>
+    <p id="confirmation-msg"></p>
+  </section>
+</body>
+</html>

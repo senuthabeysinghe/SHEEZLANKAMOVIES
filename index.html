@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SHEEZLANKAMOVIES</title>
+  <link rel="stylesheet" href="films.css" />
+  <script src="films.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>SHEEZLANKA MOVIES</h1>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT US AND CONTACT</a></li>
+        <li><a href="index.html">ONLINE MOVIE TICKET BOOKING</a></li>
+        <li><a href="">CINEMA FOOD STALL AND PRICES</a></li>
+        <li><a href="">QUERIES AND FAQ</a></li>
+    </ul>
+</nav>
+
+  <!-- NOW SHOWING -->
+  <section id="now-showing">
+    <h2>Now Showing</h2>
+    <div class="movie-container">
+      <div class="movie-card">
+        <img src="img/n1.jpg" alt="Movie 1">
+        <h3>Fast & Furious 10</h3>
+        <p>Action | Rs.1200</p>
+        <label for="fastfurious10-qty">Seats:</label>
+        <input type="number" id="fastfurious10-qty" min="0" value="0">
+        <button onclick="bookTicket('Fast & Furious 10', 1200, 'fastfurious10-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/n2.jpg" alt="Movie 2">
+        <h3>Guardians of the Galaxy Vol. 3</h3>
+        <p>Adventure | Rs.1300</p>
+        <label for="guardians3-qty">Seats:</label>
+        <input type="number" id="guardians3-qty" min="0" value="0">
+        <button onclick="bookTicket('Guardians of the Galaxy Vol. 3', 1300, 'guardians3-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/n3.jpg" alt="Movie 3">
+        <h3>The Batman</h3>
+        <p>Action | Rs.1400</p>
+        <label for="batman-qty">Seats:</label>
+        <input type="number" id="batman-qty" min="0" value="0">
+        <button onclick="bookTicket('The Batman', 1400, 'batman-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/n4.jpg" alt="Movie 4">
+        <h3>Minions: Rise of Gru</h3>
+        <p>Animation | Rs.1000</p>
+        <label for="minions-qty">Seats:</label>
+        <input type="number" id="minions-qty" min="0" value="0">
+        <button onclick="bookTicket('Minions: Rise of Gru', 1000, 'minions-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/n5.jpg" alt="Movie 5">
+        <h3>John Wick 4</h3>
+        <p>Action | Rs.1500</p>
+        <label for="johnwick4-qty">Seats:</label>
+        <input type="number" id="johnwick4-qty" min="0" value="0">
+        <button onclick="bookTicket('John Wick 4', 1500, 'johnwick4-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/n6.jpg" alt="Movie 6">
+        <h3>Black Panther: Wakanda Forever</h3>
+        <p>Action | Rs.1350</p>
+        <label for="wakanda-qty">Seats:</label>
+        <input type="number" id="wakanda-qty" min="0" value="0">
+        <button onclick="bookTicket('Black Panther: Wakanda Forever', 1350, 'wakanda-qty')">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPCOMING MOVIES -->
+  <section id="upcoming-movies">
+    <h2>Upcoming Movies</h2>
+    <div class="movie-container">
+      <div class="movie-card">
+        <img src="img/u1.jpg" alt="Movie 1">
+        <h3>Avatar 3</h3>
+        <p>Fantasy | Rs.1500</p>
+        <label for="avatar3-qty">Seats:</label>
+        <input type="number" id="avatar3-qty" min="0" value="0">
+        <button onclick="bookTicket('Avatar 3', 1500, 'avatar3-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/u2.jpg" alt="Movie 2">
+        <h3>The Marvels</h3>
+        <p>Sci-Fi | Rs.1400</p>
+        <label for="marvels-qty">Seats:</label>
+        <input type="number" id="marvels-qty" min="0" value="0">
+        <button onclick="bookTicket('The Marvels', 1400, 'marvels-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/u3.jpg" alt="Movie 3">
+        <h3>Shazam 2</h3>
+        <p>Action | Rs.1100</p>
+        <label for="shazam2-qty">Seats:</label>
+        <input type="number" id="shazam2-qty" min="0" value="0">
+        <button onclick="bookTicket('Shazam 2', 1100, 'shazam2-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/u4.jpg" alt="Movie 4">
+        <h3>Wonka</h3>
+        <p>Fantasy | Rs.1200</p>
+        <label for="wonka-qty">Seats:</label>
+        <input type="number" id="wonka-qty" min="0" value="0">
+        <button onclick="bookTicket('Wonka', 1200, 'wonka-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/u5.jpg" alt="Movie 5">
+        <h3>Barbie</h3>
+        <p>Comedy | Rs.1100</p>
+        <label for="barbie-qty">Seats:</label>
+        <input type="number" id="barbie-qty" min="0" value="0">
+        <button onclick="bookTicket('Barbie', 1100, 'barbie-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/u6.jpg" alt="Movie 6">
+        <h3>Napoleon</h3>
+        <p>Drama | Rs.1600</p>
+        <label for="napoleon-qty">Seats:</label>
+        <input type="number" id="napoleon-qty" min="0" value="0">
+        <button onclick="bookTicket('Napoleon', 1600, 'napoleon-qty')">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREMIUM SCREENINGS -->
+  <section id="premium-screenings">
+    <h2>Premium Screenings</h2>
+    <div class="movie-container">
+      <div class="movie-card">
+        <img src="img/p1.jpg" alt="Premium 1">
+        <h3>Oppenheimer (IMAX)</h3>
+        <p>Drama | Rs.2000</p>
+        <label for="oppenheimer-qty">Seats:</label>
+        <input type="number" id="oppenheimer-qty" min="0" value="0">
+        <button onclick="bookTicket('Oppenheimer (IMAX)', 2000, 'oppenheimer-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/p2.jpg" alt="Premium 2">
+        <h3>Interstellar (IMAX)</h3>
+        <p>Sci-Fi | Rs.1900</p>
+        <label for="interstellar-qty">Seats:</label>
+        <input type="number" id="interstellar-qty" min="0" value="0">
+        <button onclick="bookTicket('Interstellar (IMAX)', 1900, 'interstellar-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/p3.jpg" alt="Premium 3">
+        <h3>Dune (IMAX)</h3>
+        <p>Sci-Fi | Rs.1950</p>
+        <label for="dune-qty">Seats:</label>
+        <input type="number" id="dune-qty" min="0" value="0">
+        <button onclick="bookTicket('Dune (IMAX)', 1950, 'dune-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/p4.jpg" alt="Premium 4">
+        <h3>Inception (IMAX)</h3>
+        <p>Thriller | Rs.1800</p>
+        <label for="inception-qty">Seats:</label>
+        <input type="number" id="inception-qty" min="0" value="0">
+        <button onclick="bookTicket('Inception (IMAX)', 1800, 'inception-qty')">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D & IMAX SHOWS -->
+  <section id="imax-shows">
+    <h2>3D & IMAX Shows</h2>
+    <div class="movie-container">
+      <div class="movie-card">
+        <img src="img/31.jpg" alt="IMAX 1">
+        <h3>Jurassic World 3D</h3>
+        <p>Sci-Fi | Rs.1800</p>
+        <label for="jurassic3d-qty">Seats:</label>
+        <input type="number" id="jurassic3d-qty" min="0" value="0">
+        <button onclick="bookTicket('Jurassic World 3D', 1800, 'jurassic3d-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/32.jpg" alt="IMAX 2">
+        <h3>Avatar: The Way of Water (3D)</h3>
+        <p>Fantasy | Rs.1850</p>
+        <label for="avatar3d-qty">Seats:</label>
+        <input type="number" id="avatar3d-qty" min="0" value="0">
+        <button onclick="bookTicket('Avatar: The Way of Water (3D)', 1850, 'avatar3d-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/33.jpg" alt="IMAX 3">
+        <h3>Doctor Strange 3D</h3>
+        <p>Action | Rs.1750</p>
+        <label for="drstrange3d-qty">Seats:</label>
+        <input type="number" id="drstrange3d-qty" min="0" value="0">
+        <button onclick="bookTicket('Doctor Strange 3D', 1750, 'drstrange3d-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/34.jpg" alt="IMAX 4">
+        <h3>Spider-Man: No Way Home (3D)</h3>
+        <p>Adventure | Rs.1700</p>
+        <label for="spiderman3d-qty">Seats:</label>
+        <input type="number" id="spiderman3d-qty" min="0" value="0">
+        <button onclick="bookTicket('Spider-Man: No Way Home (3D)', 1700, 'spiderman3d-qty')">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIAL DISCOUNT OFFERS -->
+  <section id="discount-offers">
+    <h2>Special Discount Offers</h2>
+    <div class="movie-container">
+      <div class="movie-card">
+        <img src="img/s1.webp" alt="Discount Movie">
+        <h3>Classic Rewind - Titanic</h3>
+        <p>Romance | Rs.600</p>
+        <label for="titanic-qty">Seats:</label>
+        <input type="number" id="titanic-qty" min="0" value="0">
+        <button onclick="bookTicket('Classic Rewind - Titanic', 600, 'titanic-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/s2.jpg" alt="Discount 2">
+        <h3>Harry Potter Marathon</h3>
+        <p>Fantasy | Rs.900</p>
+        <label for="harrypotter-qty">Seats:</label>
+        <input type="number" id="harrypotter-qty" min="0" value="0">
+        <button onclick="bookTicket('Harry Potter Marathon', 900, 'harrypotter-qty')">Book Now</button>
+      </div>
+      <div class="movie-card">
+        <img src="img/s3.jpg" alt="Discount 3">
+        <h3>Comedy Night - Mr. Bean</h3>
+        <p>Comedy | Rs.500</p>
+        <label for="mrbean-qty">Seats:</label>
+        <input type="number" id="mrbean-qty" min="0" value="0">
+        <button onclick="bookTicket('Comedy Night - Mr. Bean', 500, 'mrbean-qty')">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKET SELECTION SUMMARY -->
+  <section id="selected-tickets">
+    <h2>🎟️ Your Selected Tickets</h2>
+    <table id="ticket-table">
+      <thead>
+        <tr>
+          <th>Movie</th>
+          <th>Seats</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <h3>Total: Rs. <span id="total-price">0</span></h3>
+
+    <button onclick="proceedToCheckout()">PAY NOW</button>
+    <button onclick="saveAsFavourite()">Save as Favourite</button>
+    <button onclick="applyFavourite()">Apply Favourite</button>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-section contact">
+      <h2>Contact Us</h2>
+      <p>Email: sheezlankaMovies@gmail.com</p>
+      <p>Phone: +94 712 775 985</p>
+      <p>Address: 2A Main St, Colombo 7, Sri Lanka</p>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2024 SHEEZ LANKA MOVIES | Designed by Senuth
+</div>
+  </footer>
+
+</body>
+</html>
